@@ -1,0 +1,29 @@
+*{
+    font-family: "微軟正黑體";
+    font-weight: 600;
+}
+.card-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.card-deck {
+    width: 70%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.text-area {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}

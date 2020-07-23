@@ -1,0 +1,33 @@
+<form method="POST" action="/">
+    <div class="card-area">
+        <div class="card-deck">
+        <div class="card">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">工程師</h5>
+                <label><input type="radio" name="target" value="engineer"{{#if_equal job 'engineer'}}checked{{/if_equal}}></label>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">設計師</h5>
+                <label><input type="radio" name="target" value="designer"{{#if_equal job 'designer'}}checked{{/if_equal}}></label>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">創業家</h5>
+                <label><input type="radio" name="target" value="entrepreneur" {{#if_equal job 'entrepreneur'}}checked{{/if_equal}}></label>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="text-area">
+        <button class="btn btn-primary mr-2" style="height: 100%;" type="submit">產生幹話</button>
+        <div class="alert alert-primary" role="alert">
+            {{Bullshits}}
+        </div>
+    </div>
+</form>
